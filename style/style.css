@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.calender{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-gap:10px 20px;
+    font-size: 1.5em;
+    width: 600px;
+    margin-top: 50px;
+    justify-items: center;
+}
+
+.day,.day-red,.date,.date-red,.date-next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 40px;
+    border-radius: 10%;
+}
+
+.day,.day-red{
+    background-color: rgb(188, 248, 23);
+}
+
+.date,.date-red{
+    background-color: rgb(105, 192, 47);
+}
+
+.date-next{
+    background-color: grey;
+}
+
+.day-red,.date-red{
+    color: rgb(230, 41, 41);
+}
